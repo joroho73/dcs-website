@@ -91,6 +91,34 @@ body {
     letter-spacing: 0.3px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: right;
+}
+
+.header-contact a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-contact i {
+    margin-right: 8px;
+}
+
+.header-phone {
+color: var(--secondary);
+font-weight: 700;
+}
+
 /* ===== NAVIGATION BAR (STICKY) ===== */
 .navbar {
     background: var(--primary);
@@ -521,7 +549,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card-icon {
+.service-icon {
     font-size: 48px;
     color: #3fa85f;
     margin-bottom: 20px;
@@ -591,7 +619,7 @@ body {
 /* Why Choose DCS Section */
 .why-choose-dcs {
     padding: 60px 20px;
-    background-color: #f8f9fa;
+    background-color: #f8fbfc;
 }
 
 .why-choose-dcs h2 {
@@ -625,9 +653,9 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card-icon {
+.benefit-icon {
     font-size: 48px;
-    color: #3fa85f;
+    color: var(--secondary);
     margin-bottom: 20px;
 }
 
@@ -783,6 +811,14 @@ body {
         font-size: 1.4rem;
     }
 
+        .header-contact {
+        display: none;
+    }
+
+    .header-email {
+        color: var(--primary-color);
+    }
+
     .tagline {
         font-size: 0.9rem;
     }
@@ -903,10 +939,69 @@ body {
     font-weight: 500;
 }
 
+/* ===== MEET JOHN ===== */
+
+.meet-john {
+    background: #EEF6FF;
+    padding: 80px 20px;
+    border-top: 1px solid rgba(30,47,87,0.08);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 50px;
+}
+
+.meet-john-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.meet-john-image {
+    flex: 0 0 300px;
+}
+
+.meet-john-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background: #ffffff;
+}
+
+.meet-john-text {
+    flex: 1;
+}
+
+.meet-john-text p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .meet-john-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .meet-john-image {
+        flex: none;
+    }
+
+    .meet-john-image img {
+        max-width: 220px;
+    }
+}
+
+
 /* ===== LATEST REVIEWS ===== */
 .latest-reviews {
     padding: 80px 20px;
-    background: var(--light-bg);
+    background-color: #f8fbfc;
 }
 
 .latest-reviews h3 {
@@ -1002,15 +1097,25 @@ body {
     opacity: 0.95;
 }
 
+.business-tech-teaser .btn:hover,
+.ai-teaser .btn:hover,
+.cta-section .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .ai-teaser .btn {
     background: var(--white);
     color: var(--primary);
-    border-color: var(--white);
+    border: 2px solid var(--white);
 }
 
 .ai-teaser .btn:hover {
-    background: #f0f0f0;
-    border-color: #f0f0f0;
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -1035,4 +1140,76 @@ body {
     .hero-content h2 {
         font-size: 1.6rem;
     }
+}
+
+/* ========  FOOTER  ========= */
+
+.site-footer {
+    background: var(--primary);
+    color: #fff;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 70px 20px 50px;
+}
+
+.footer-column h4 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-column p,
+.footer-column li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.85);
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column a {
+    color: rgba(255,255,255,.85);
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.footer-column a:hover {
+    color: var(--accent-color);
+}
+
+.footer-column i {
+    width: 22px;
+    color: var(--accent-color);
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.15);
+    text-align: center;
+    padding: 25px 20px;
+    color: rgba(255,255,255,.7);
+    font-size: .95rem;
+}
+
+@media (max-width:768px){
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+        text-align:center;
+    }
+
+    .footer-column i{
+        width:auto;
+        margin-right:10px;
+    }
+
 }

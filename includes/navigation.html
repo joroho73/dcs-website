@@ -1,24 +1,56 @@
-<!-- Main Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="index.html">
-                <img src="images/dcs-logo.png" alt="Dunmow Computer Services" class="logo">
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo-link">
+            <img src="images/dcs-logo.png"
+                 alt="Dunmow Computer Services Logo"
+                 class="site-logo">
+
+            <div class="header-text">
+                <h1>Dunmow Computer Services</h1>
+                <p class="tagline">
+                    Technology Support for Homes & Small Businesses
+                </p>
+            </div>
+        </a>
+
+        <div class="header-contact">
+            <a href="tel:07356013282" 
+                onclick="gtag('event', 'phone_click', {'link_location': 'header'});">
+                <i class="fa-solid fa-phone"></i>
+                <span class="header-phone">07356 013282</span>
+            </a>
+
+            <a href="mailto:hello@dunmowcomputerservices.co.uk"
+               class="header-email"
+               onclick="gtag('event', 'email_click', {'link_location': 'header'});">
+
+                <i class="fa-solid fa-envelope"></i>
+                hello@dunmowcomputerservices.co.uk
             </a>
         </div>
+
+        <button class="hamburger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="nav-container">
         <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="computer-support.html">Computer Support</a></li>
-            <li><a href="business-technology.html">Business Technology</a></li>
-            <li><a href="ai-automation.html">AI Automation</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="computer-services.html" class="nav-link">Computer Services</a></li>
+            <li><a href="business-technology.html" class="nav-link">Business Technology</a></li>
+            <li><a href="ai-automation.html" class="nav-link">AI Automation</a></li>
+            <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </div>
 </nav>
