@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dunmow Computer Services | Technology Support for Homes & Small Businesses</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- SEO -->
+    <title>Dunmow Computer Services</title>
+    <meta name="description" content="Dunmow Computer Services provides local technology support for homes and small businesses in Great Dunmow and surrounding areas.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.dunmowcomputerservices.co.uk/index.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dunmow Computer Services">
+    <meta property="og:description" content="Dunmow Computer Services provides local technology support for homes and small businesses in Great Dunmow and surrounding areas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dunmowcomputerservices.co.uk/index.html">
+    <meta property="og:image" content="https://www.dunmowcomputerservices.co.uk/images/dcs-logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABC123XYZ9"></script>
+
+    <script>
+    if (location.hostname === 'www.dunmowcomputerservices.co.uk' ||
+        location.hostname === 'dunmowcomputerservices.co.uk') {
+
+        const gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-92GT0N6XGF';
+        document.head.appendChild(gaScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-92GT0N6XGF');
+    }
+    </script>
 </head>
 <body>
     <!-- Include Header -->
@@ -241,7 +277,7 @@ c
         </section>
 
         <!-- CTA SECTION -->
-        <section class="cta-section">
+        <section class="homepage-cta">
             <div class="container">
                 <h3>Need Help?</h3>
                 <p>Contact us today for a friendly chat about your technology needs.</p>

@@ -2,8 +2,8 @@
 <header class="site-header">
     <div class="header-container">
 
-        <a href="index.html" class="logo-link">
-            <img src="images/dcs-logo.png"
+        <a href="/index.html" class="logo-link">
+            <img src="/images/dcs-logo.png"
                  alt="Dunmow Computer Services Logo"
                  class="site-logo">
 
@@ -17,17 +17,17 @@
 
         <div class="header-contact">
             <a href="tel:07356013282" 
-                onclick="gtag('event', 'phone_click', {'link_location': 'header'});">
+                class="track-phone"
+                data-location="header">
                 <i class="fa-solid fa-phone"></i>
                 <span class="header-phone">07356 013282</span>
             </a>
 
-            <a href="mailto:hello@dunmowcomputerservices.co.uk"
-               class="header-email"
-               onclick="gtag('event', 'email_click', {'link_location': 'header'});">
-
+            <a href="mailto:dunmowcomputerservices@gmail.com"
+               class="track-email"
+               data-location="header">
                 <i class="fa-solid fa-envelope"></i>
-                hello@dunmowcomputerservices.co.uk
+                <span>dunmowcomputerservices@gmail.com</span>
             </a>
         </div>
 

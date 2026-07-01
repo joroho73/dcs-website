@@ -6,7 +6,7 @@ export function loadFooter() {
         return;
     }
 
-    fetch('includes/footer.html')
+    fetch('/includes/footer.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Could not load footer: ${response.status}`);

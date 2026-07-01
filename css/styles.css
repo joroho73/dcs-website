@@ -452,6 +452,43 @@ a {
     }
 }
 
+/* ===== PAGE HEADER ===== */
+
+.page-header {
+    background: var(--light-bg);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.page-intro {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* ===== PAGE CONTENT ===== */
+
+.page-content {
+    padding: 80px 20px;
+    background: var(--white);
+}
+
+.page-content h2 {
+    margin-bottom: 24px;
+}
+
+.page-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
 /* ===== HOME: SERVICES OVERVIEW ===== */
 .services-overview {
     padding: 60px 20px;
@@ -688,7 +725,7 @@ a {
 
 .business-tech-teaser .btn:hover,
 .ai-teaser .btn:hover,
-.cta-section .btn:hover {
+.homepage-cta .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -728,20 +765,20 @@ a {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== CTA SECTION ===== */
-.cta-section {
+/* ===== HOMEPAGE CTA SECTION ===== */
+.homepage-cta {
     background: var(--secondary);
     color: var(--white);
     padding: 80px 20px;
     text-align: center;
 }
 
-.cta-section h3 {
+.homepage-cta h3 {
     font-size: 2.2rem;
     margin-bottom: 15px;
 }
 
-.cta-section p {
+.homepage-cta p {
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
@@ -796,6 +833,19 @@ a {
 
 .page-content li {
     margin-bottom: 10px;
+}
+
+/* ===== PAGE CTA ===== */
+
+.page-cta {
+    padding: 80px 20px;
+    background: var(--white);
+    text-align: center;
+}
+
+.page-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
 }
 
 /* ===== FOOTER ===== */
@@ -1007,7 +1057,7 @@ a {
         max-width: 220px;
     }
 
-    .cta-section h3 {
+    .homepage-cta h3 {
         font-size: 1.6rem;
     }
 

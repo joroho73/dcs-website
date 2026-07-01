@@ -1,12 +1,13 @@
-import { loadHeader } from './header.js';
+import { initializeAnalytics } from '/js/analytics.js';
+import { loadHeader } from '/js/header.js';
 import {
     loadNavigation,
     initializeNavigation,
     setActiveNavigation,
     initializeStickyNavigation
-} from './navigation.js';
-import { loadFooter } from './footer.js';
-import { initializeCarousel } from './carousel.js';
+} from '/js/navigation.js';
+import { loadFooter } from '/js/footer.js';
+import { initializeCarousel } from '/js/carousel.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
 
@@ -20,6 +21,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     setActiveNavigation();
     initializeStickyNavigation();
     initializeCarousel();
-
+    initializeAnalytics();
 });
 

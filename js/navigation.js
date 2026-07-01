@@ -18,7 +18,7 @@ export function initializeNavigation() {
 }
 
 export function loadNavigation() {
-    return fetch('includes/navigation.html')
+    return fetch('/includes/navigation.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navigation').innerHTML = data;
