@@ -946,6 +946,10 @@ a {
     margin-bottom: 10px;
 }
 
+.highlight-section {
+    background: var(--soft-blue-bg);
+}
+
 /* ==========================================================
    FEATURE CARDS / PROCESS / FAQ
 ========================================================== */
@@ -1168,6 +1172,74 @@ a {
     background: #fff1f1;
     color: #8a1f1f;
     border: 1px solid #d88;
+}
+
+/*==================================================
+    PRICING
+==================================================*/
+
+.pricing-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.pricing-table {
+    max-width: 850px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 28px;
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-row:last-child {
+    border-bottom: none;
+}
+
+.pricing-row:nth-child(even) {
+    background: var(--surface-blue);
+}
+
+.pricing-service {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.pricing-price {
+    text-align: right;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.pricing-price span {
+    display: block;
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.pricing-note {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 18px 22px;
+    background: var(--surface-blue);
+    border-left: 5px solid var(--secondary);
+    border-radius: 8px;
 }
 
 /* ==========================================================
