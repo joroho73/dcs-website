@@ -7,7 +7,7 @@
     /* Brand colours */
     --primary: #13233f;
     --secondary: #2563eb;
-    --accent: #2563eb;
+    --accent: #3fa85f;
 
     /* Neutrals */
     --white: #ffffff;
@@ -225,19 +225,19 @@ a {
     font-weight: 500;
 }
 
-.header-contact a:hover,
-.header-contact a:hover .header-phone {
-    color: var(--secondary);
+.header-contact a:hover {
+    color: var(--accent);
 }
 
 .header-contact i {
     margin-right: 8px;
 }
 
-.header-phone {
-    color: var(--secondary);
+.header-phone{
+    color: var(--accent);
     font-weight: 700;
 }
+
 
 /* ==========================================================
    NAVIGATION
@@ -1041,6 +1041,10 @@ a {
     margin: 0 auto 30px;
 }
 
+/* ==========================================================
+   OTHER PAGES  
+========================================================== */
+
 
 /* ===== ABOUT PAGE ===== */
 
@@ -1083,6 +1087,84 @@ a {
         text-align: left;
     }
 
+}
+
+/* ===== CONTACT FORM ===== */
+
+.contact-section .container {
+    max-width: 800px;
+}
+
+.contact-section h2,
+.contact-section p {
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font: inherit;
+    color: var(--text-dark);
+    background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px var(--surface-blue);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+.form-status {
+    margin-bottom: 24px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    display: none;
+}
+
+.form-status.success,
+.form-status.error {
+    display: block;
+}
+
+.form-status.success {
+    background: var(--surface-blue);
+    color: var(--primary);
+    border: 1px solid var(--secondary);
+}
+
+.form-status.error {
+    background: #fff1f1;
+    color: #8a1f1f;
+    border: 1px solid #d88;
 }
 
 /* ==========================================================

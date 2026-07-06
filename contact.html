@@ -60,45 +60,57 @@
     <!-- Main Content -->
     <main class="main-content">
 
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
+        <section class="content-section contact-section">
+            <div class="container"> 
 
-                <h1>Contact Us</h1>
-
-                <p class="page-intro-text">
-                    Get in touch with Dunmow Computer Services for all your technology needs.
-                </p>
-
-            </div>
-        </section>
-
-        <!-- Main Content -->
-        <section class="page-content">
-            <div class="container">
-
-                <h2>Section Heading</h2>
+                <h2>Contact Dunmow Computer Services</h2>
 
                 <p>
-                    Replace this with your page content.
+                    Need help with a computer, printer, Wi-Fi, email or business technology?
+                    Send a message and I’ll get back to you as soon as possible.
                 </p>
 
-            </div>
-        </section>
+                <form id="contactForm" class="contact-form" method="post">
 
-        <!-- Call To Action -->
-        <section class="page-cta">
-            <div class="container">
+                    <div id="formStatus" class="form-status"></div>
 
-                <h2>Ready to Get Started?</h2>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                <p>
-                    Contact us today for friendly, jargon-free advice.
-                </p>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                <a href="/contact.html" class="btn btn-primary">
-                    Get In Touch
-                </a>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">What do you need help with?</label>
+                        <select id="service" name="service">
+                            <option value="">Please choose...</option>
+                            <option value="Computer repair or upgrade">Computer repair or upgrade</option>
+                            <option value="Wi-Fi or printer help">Wi-Fi or printer help</option>
+                            <option value="Email or account support">Email or account support</option>
+                            <option value="New computer setup">New computer setup</option>
+                            <option value="Business technology support">Business technology support</option>
+                            <option value="AI automation">AI automation</option>
+                            <option value="Something else">Something else</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+
+                </form>
 
             </div>
         </section>
@@ -110,6 +122,7 @@
 
     <!-- JavaScript -->
     <script type="module" src="/js/main.js"></script>
+    <script src="/js/contact.js"></script>
 
 </body>
 </html>
