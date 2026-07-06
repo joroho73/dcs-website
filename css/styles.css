@@ -1139,9 +1139,12 @@ a {
     resize: vertical;
 }
 
-.contact-form button {
-    width: 100%;
+.form-required {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-left: 4px;
 }
+
 
 .form-status {
     margin-bottom: 24px;

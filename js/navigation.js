@@ -29,7 +29,11 @@ export function setActiveNavigation() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
     document.querySelectorAll('.nav-link').forEach(link => {
-        const linkPage = link.getAttribute('href');
+        const linkHref = link.getAttribute('href');
+
+        if (!linkHref) return;
+
+        const linkPage = linkHref.split('/').pop() || 'index.html';
 
         if (linkPage === currentPage) {
             link.classList.add('active');
