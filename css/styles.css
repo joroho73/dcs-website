@@ -35,6 +35,10 @@
     /* Motion */
     --transition-fast: 0.25s ease;
     --transition-default: 0.3s ease;
+
+    /*  Star Rating Colors */
+    --star-inactive: #e5e7eb;
+    --star-active: #f5b301;
 }
 
 /* ==========================================================
@@ -1151,7 +1155,7 @@ a {
 }
 
 .form-required {
-    color: var(--accent);
+    color: var(--secondary);
     font-size: 1.2rem;
     margin-left: 4px;
 }
@@ -1248,6 +1252,259 @@ a {
     border-left: 5px solid var(--secondary);
     border-radius: 8px;
 }
+
+/*==================================================
+    REVIEW CARDS
+==================================================*/
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+.review-stars {
+    margin-bottom: 18px;
+    color: var(--secondary);
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    flex-grow: 1;
+    margin: 0 0 20px;
+    color: var(--text-dark);
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.review-author {
+    margin: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.review-service {
+    margin: 4px 0 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+
+/*==================================================
+    REVIEW FORM
+==================================================*/
+
+.review-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.review-form-intro {
+    margin-bottom: 30px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin: 0;
+}
+
+.review-form label,
+.review-form legend {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.review-form fieldset {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-colour);
+    border-radius: 6px;
+    background: var(--white);
+    color: var(--text-dark);
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.review-form input[type="text"]:focus,
+.review-form input[type="email"]:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    border-color: var(--primary);
+    outline: 3px solid color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+.review-form textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.review-form small,
+.form-privacy-note {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/*==================================================
+    STAR RATING
+==================================================*/
+
+.rating-group {
+    width: fit-content;
+}
+
+.star-rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.star-rating input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.star-rating label {
+    margin: 0;
+    color: var(--star-inactive);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: var(--star-active);
+}
+
+.star-rating input:focus-visible + label {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+
+/*==================================================
+    CONSENT CHECKBOX
+==================================================*/
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 3px 0 0;
+    flex: 0 0 auto;
+    accent-color: var(--primary);
+}
+
+.checkbox-group label {
+    display: inline;
+    margin: 0;
+    color: var(--text-dark);
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+
+/*==================================================
+    FORM ACTIONS
+==================================================*/
+
+.form-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-status {
+    min-height: 1.5em;
+    margin: 0;
+    font-weight: 600;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/*==================================================
+    RESPONSIVE REVIEWS 
+==================================================*/
+
+@media (max-width: 900px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .review-form-container {
+        max-width: 100%;
+    }
+
+    .review-card {
+        padding: 24px;
+    }
+
+    .star-rating label {
+        font-size: 1.8rem;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+}
+
 
 /* ==========================================================
    POLICY METADATA

@@ -60,57 +60,221 @@
     <!-- Main Content -->
     <main class="main-content">
 
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
+    <!-- PAGE INTRO -->
+    <section class="page-header">
+        <div class="container">
 
-                <h1>Customer Reviews</h1>
+            <h1>Customer Reviews</h1>
 
-                <p class="page-intro-text">
-                    A short introduction explaining what this page is about and
-                    why it matters to your visitors.
-                </p>
+            <p class="page-intro-text">
+                Feedback from customers who have used Dunmow Computer Services.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section class="content-section">
+        <div class="container">
+
+            <h2>What Customers Say</h2>
+
+            <div class="reviews-grid">
+
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">
+                        ★★★★★
+                    </div>
+
+                    <blockquote class="review-text">
+                        “John is a true gentleman, helped us out greatly with fixing 
+                        a very important usb that was damaged. Very quick and reasonable priced!”
+                    </blockquote>
+
+                    <p class="review-author">Kane Midwinter</p>
+                    <p class="review-service">USB key repair</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">
+                        ★★★★★
+                    </div>
+
+                    <blockquote class="review-text">
+                        “John was so helpful when dealing with our broken laptop! 
+                        He kindly took the time to collect the laptop from our 
+                        doorstep and dealt with our issue promptly. Great communication 
+                        and his customer service was excellent and very friendly. Highly recommend!”
+                    </blockquote>
+
+                    <p class="review-author">Laura Blethyn</p>
+                    <p class="review-service">Home user support</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">
+                        ★★★★★
+                    </div>
+
+                    <blockquote class="review-text">
+                        “Used recently for the culmination of a six year creative project. I was very 
+                        impressed with this company's subject expertise, professionalism and contact 
+                        with us. We were given regular updates on progress and any issues were dealt 
+                        with promptly. Costs were well within expectations. Overall a superb service 
+                        and I would highly recommend.”
+                    </blockquote>
+
+                    <p class="review-author">John C.</p>
+                    <p class="review-service">Website build and Book Publication</p>
+                </article>
+
+                                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">
+                        ★★★★★
+                    </div>
+
+                    <blockquote class="review-text">
+                        “I had to buy a new laptop as my old one was out of date in so many ways. 
+                        John at Dunmow Computer Sevices sorted it all for me. I am hopeless at IT 
+                        and John came to my rescue. I highly recommend Dunmow Computer Services”
+                    </blockquote>
+
+                    <p class="review-author">Gary Fletcher</p>
+                    <p class="review-service">New laptop setup</p>
+                </article>
 
             </div>
-        </section>
 
-        <!-- Main Content -->
-        <section class="page-content">
-            <div class="container">
+        </div>
+    </section>
+    
+    <section class="content-section highlight-section">
+        <div class="container review-form-container">
 
-                <h2>Section Heading</h2>
+            <h2>Leave a Review</h2>
 
-                <p>
-                    Replace this with your page content.
+            <p class="review-form-intro">
+                Used Dunmow Computer Services recently? I’d be grateful if you shared
+                your experience. You do not need a Google account, and nothing will
+                be published without your permission.
+            </p>
+
+            <form id="review-form" class="review-form" action="review.php" method="post">
+
+                <div class="form-group">
+                    <label for="review-name">Your name<span class="form-required">*</span></label>
+                    <input type="text" id="review-name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-email">Email address<span class="form-required">*</span></label>
+                    <input type="email" id="review-email" name="email" autocomplete="email" required>
+                    <small>Your email address will not be published.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-service">Service received</label>
+                    <input
+                        type="text"
+                        id="review-service"
+                        name="service"
+                        placeholder="For example: laptop repair"
+                    >
+                </div>
+
+                <fieldset class="form-group rating-group">
+                    <legend>Rating<span class="form-required">*</span></legend>
+
+                    <div class="star-rating" role="radiogroup" aria-label="Choose a rating from 1 to 5 stars">
+
+                        <input type="radio" id="rating-5" name="rating" value="5" required>
+                        <label for="rating-5" title="5 stars">
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">5 stars</span>
+                        </label>
+
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4" title="4 stars">
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">4 stars</span>
+                        </label>
+
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3" title="3 stars">
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">3 stars</span>
+                        </label>
+
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2" title="2 stars">
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">2 stars</span>
+                        </label>
+
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label for="rating-1" title="1 star">
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">1 star</span>
+                        </label>
+
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="review-message">Your review<span class="form-required">*</span></label>
+                    <textarea id="review-message" name="review" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input
+                        type="checkbox"
+                        id="review-permission"
+                        name="permission"
+                        value="yes"
+                    >
+                    <label for="review-permission">
+                        You may publish this review on the Dunmow Computer Services website.
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-display-name">
+                        How should your name appear if the review is published?<span class="form-required">*</span>
+                    </label>
+                    <select id="review-display-name" name="display_name" required>
+                        <option value="">Choose an option</option>
+                        <option value="full">Full name</option>
+                        <option value="first-last-initial">First name and surname initial</option>
+                        <option value="first-name">First name only</option>
+                        <option value="anonymous">Anonymous</option>
+                    </select>
+                </div>
+
+                <p class="form-privacy-note">
+                    Your contact details will only be used to verify the review or contact
+                    you about your feedback. Reviews are checked before publication.
                 </p>
 
-            </div>
-        </section>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </div>
 
-        <!-- Call To Action -->
-        <section class="page-cta">
-            <div class="container">
+                <p id="review-form-status" class="form-status" aria-live="polite"></p>
 
-                <h2>Ready to Get Started?</h2>
+            </form>
+        </div>
+    </section>
 
-                <p>
-                    Contact us today for friendly, jargon-free advice.
-                </p>
 
-                <a href="/contact.html" class="btn btn-primary">
-                    Get In Touch
-                </a>
-
-            </div>
-        </section>
-
-    </main>
+</main>
 
     <!-- Footer -->
     <div id="footer"></div>
 
     <!-- JavaScript -->
     <script type="module" src="/js/main.js"></script>
+    <script src="/js/forms.js"></script>
 
 </body>
 </html>
