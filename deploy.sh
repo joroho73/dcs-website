@@ -7,7 +7,9 @@ echo "Deploying DCS website..."
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-rsync -avz --dry-run \
+rsync -avz \
+    --dry-run \
+    --delete \
     --itemize-changes \
     --exclude=".git/" \
     --exclude=".vscode/" \
@@ -18,6 +20,7 @@ rsync -avz --dry-run \
     --exclude="*.bak" \
     --exclude="*.log" \
     --exclude="templates/" \
+    --exclude="README.md" \
     -e "ssh -p 1022" \
     ./ \
     csh3422229@ssh.dunmowcomputerservices.com:htdocs/
