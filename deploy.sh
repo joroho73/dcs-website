@@ -8,7 +8,6 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 rsync -avz \
-    --delete \
     --itemize-changes \
     --exclude=".git/" \
     --exclude=".vscode/" \
