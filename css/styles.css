@@ -625,8 +625,7 @@ a {
 }
 
 .services-grid,
-.benefits-grid,
-.reviews-grid {
+.benefits-grid {
     display: grid;
     gap: 30px;
     max-width: var(--container-width);
@@ -790,8 +789,11 @@ a {
 }
 
 .reviews-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
 }
 
 .review-card {
@@ -826,6 +828,7 @@ a {
 }
 
 .reviews-cta {
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -1269,14 +1272,6 @@ a {
     REVIEW CARDS
 ==================================================*/
 
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .review-card {
     display: flex;
     flex-direction: column;
@@ -1659,11 +1654,13 @@ a {
         flex-direction: column;
         max-height: 0;
         overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         transition: max-height var(--transition-default);
     }
 
     .nav-menu.active {
-        max-height: 400px;
+        max-height: calc(100vh - 90px);
     }
 
     .nav-menu li {
