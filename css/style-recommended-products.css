@@ -199,15 +199,15 @@
     }
 
     .product-tag.value i {
-    color: #22c55e;      /* green */
+    color: var(--secondary)      
     }
 
     .product-tag.recommended i {
-        color: var(--secondary); /* DCS blue */
+        color: var(--secondary); 
     }
 
     .product-tag.premium i {
-        color: #f4b400;      /* gold */
+        color: #f4b400;
     }
 
     .price-guide {
