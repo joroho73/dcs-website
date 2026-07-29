@@ -225,3 +225,24 @@
         font-weight: 700;
         letter-spacing: 1px;
     }
+
+    .price-guide-key {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 22px;
+
+        margin: 18px auto 0;
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+
+    .price-guide-key > span:first-child strong {
+        color: var(--text-dark);
+    }
+
+    .price-guide-key span:not(:first-child) strong {
+        color: var(--accent);
+        margin-right: 4px;
+    }

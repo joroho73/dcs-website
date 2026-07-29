@@ -969,6 +969,16 @@ a {
     background: var(--soft-blue-bg);
 }
 
+.text-centre {
+    text-align: center;
+}
+
+.flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ==========================================================
    FEATURE CARDS / PROCESS / FAQ
 ========================================================== */
@@ -1539,7 +1549,6 @@ a {
 /* ==========================================================
    FOOTER
 ========================================================== */
-
 .site-footer {
     background: var(--primary);
     color: var(--white);
@@ -1553,62 +1562,99 @@ a {
 }
 
 .footer-column h4 {
+    margin: 0 0 24px;
     color: var(--secondary);
-    margin-bottom: 20px;
     font-size: 1.2rem;
+    line-height: 1.2;
 }
 
-.footer-column p,
-.footer-column li {
-    margin-bottom: 12px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.footer-column ul {
+.footer-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-column a,
-.footer-legal a {
+.footer-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 16px;
+
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+.footer-list li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-list a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
-    transition: color var(--transition-default);
+
+    transition:
+        color var(--transition-default),
+        transform var(--transition-default);
 }
 
-.footer-column a:hover,
-.footer-legal a:hover {
+.footer-list i {
+    width: 20px;
+    flex: 0 0 20px;
+    margin-top: 3px;
+
     color: var(--secondary);
+    text-align: center;
 }
 
-.footer-column i {
-    width: 22px;
+.footer-list span {
+    min-width: 0;
+}
+
+.footer-list a:hover {
     color: var(--secondary);
-    margin-right: 8px;
+    transform: translateX(3px);
+}
+
+.footer-list-static li {
+    padding: 0;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    text-align: center;
     padding: 25px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
 
 .footer-legal {
-    margin-top: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
     flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
 }
 
 .footer-legal a {
     color: rgba(255, 255, 255, 0.75);
     font-size: 0.9rem;
+    text-decoration: none;
+    transition: color var(--transition-default);
+}
+
+.footer-legal a:hover {
+    color: var(--secondary);
 }
 
 .footer-legal span {
