@@ -190,12 +190,14 @@
         padding: 25px 30px;
         margin-top: 40px;
         border-radius: 8px;
+        text-align: justify;
     }
 
     .advice-box h3 {
         margin-top: 0;
         margin-bottom: 12px;
         color: var(--primary);
+        text-align: center;
     }
 
     .product-tag.value i {
