@@ -92,7 +92,7 @@ function initialiseAjaxForm({
 
             form.reset();
 
-                        // Track successful submission in GoatCounter
+            // Track successful submission in GoatCounter
             if (window.goatcounter && typeof window.goatcounter.count === "function") {
                 window.goatcounter.count({
                     path: `event/${successEvent.replace(/_/g, "-")}`,
