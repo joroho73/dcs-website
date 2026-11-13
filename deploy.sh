@@ -19,7 +19,7 @@ rsync -avz \
     --exclude="*.log" \
     --exclude="templates/" \
     --exclude="README.md" \
-    -e "ssh -p 1022" \
+    -e "ssh -p 1022 -o WarnWeakCrypto=no" \
     ./ \
     csh3422229@ssh.dunmowcomputerservices.com:htdocs/
 
