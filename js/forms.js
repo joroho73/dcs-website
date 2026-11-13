@@ -100,7 +100,7 @@ function initialiseAjaxForm({
                     event: true
                 });
             }
-
+            // Track successful submission in G4A
             if (typeof gtag === "function") {
                 gtag("event", successEvent, {
                     event_category: eventCategory,
