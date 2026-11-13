@@ -92,6 +92,15 @@ function initialiseAjaxForm({
 
             form.reset();
 
+                        // Track successful submission in GoatCounter
+            if (window.goatcounter && typeof window.goatcounter.count === "function") {
+                window.goatcounter.count({
+                    path: `event/${successEvent.replace(/_/g, "-")}`,
+                    title: `${eventLabel} Submitted`,
+                    event: true
+                });
+            }
+
             if (typeof gtag === "function") {
                 gtag("event", successEvent, {
                     event_category: eventCategory,

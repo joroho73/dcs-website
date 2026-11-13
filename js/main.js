@@ -23,4 +23,3 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeCarousel();
     initializeAnalytics();
 });
-

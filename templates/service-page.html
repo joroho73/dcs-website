@@ -1,56 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
     <title>Page Title | Dunmow Computer Services</title>
 
-    <meta name="description" content="Page description goes here.">
-    <meta name="author" content="John Howard">
-    <meta name="robots" content="index,follow">
-    <meta name="theme-color" content="#13233f">
+    <meta name="description" content="Page description goes here." />
+    <meta name="author" content="John Howard" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#13233f" />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://www.dunmowcomputerservices.com/page-name.html">
+    <link
+      rel="canonical"
+      href="https://www.dunmowcomputerservices.com/page-name.html"
+    />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Page Title | Dunmow Computer Services">
-    <meta property="og:description" content="Page description goes here.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.dunmowcomputerservices.com/page-name.html">
-    <meta property="og:image" content="https://www.dunmowcomputerservices.com/images/dcs-logo.png">
+    <meta property="og:title" content="Page Title | Dunmow Computer Services" />
+    <meta property="og:description" content="Page description goes here." />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.dunmowcomputerservices.com/page-name.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.dunmowcomputerservices.com/images/dcs-logo.png"
+    />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico" />
+
+    <!-- GoatCounter -->
+    <script
+      data-goatcounter="https://dcs.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
 
     <!-- Google Analytics -->
     <script>
-    if (location.hostname === 'www.dunmowcomputerservices.com' ||
-        location.hostname === 'dunmowcomputerservices.com') {
-
-        const gaScript = document.createElement('script');
+      if (
+        location.hostname === "www.dunmowcomputerservices.com" ||
+        location.hostname === "dunmowcomputerservices.com"
+      ) {
+        const gaScript = document.createElement("script");
         gaScript.async = true;
-        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-92GT0N6XGF';
+        gaScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=G-92GT0N6XGF";
         document.head.appendChild(gaScript);
 
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() {
+          dataLayer.push(arguments);
+        }
         window.gtag = gtag;
 
-        gtag('js', new Date());
-        gtag('config', 'G-92GT0N6XGF');
-    }
+        gtag("js", new Date());
+        gtag("config", "G-92GT0N6XGF");
+      }
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- INCLUDE Header -->
     <div id="header"></div>
 
@@ -59,144 +81,115 @@
 
     <!-- Main Content -->
     <main class="main-content">
+      <!-- PAGE INTRO -->
+      <section class="page-header">
+        <div class="container">
+          <h1>Service Name</h1>
 
-        <!-- PAGE INTRO -->
-        <section class="page-header">
-            <div class="container">
+          <p class="page-intro-text">
+            A short introduction explaining what this service is, who it is for
+            and the main benefit to the customer.
+          </p>
+        </div>
+      </section>
 
-                <h1>Service Name</h1>
+      <!-- OVERVIEW -->
+      <section class="content-section">
+        <div class="container">
+          <h2>Overview</h2>
 
-                <p class="page-intro-text">
-                    A short introduction explaining what this service is,
-                    who it is for and the main benefit to the customer.
-                </p>
+          <p>Replace this with an overview of the service.</p>
+        </div>
+      </section>
 
+      <!-- WHAT'S INCLUDED -->
+      <section class="light-section">
+        <div class="container">
+          <h2>What's Included</h2>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fa-solid fa-check"></i>
+              <h3>Feature One</h3>
+              <p>Description.</p>
             </div>
-        </section>
 
-
-        <!-- OVERVIEW -->
-        <section class="content-section">
-            <div class="container">
-
-                <h2>Overview</h2>
-
-                <p>
-                    Replace this with an overview of the service.
-                </p>
-
+            <div class="feature-card">
+              <i class="fa-solid fa-check"></i>
+              <h3>Feature Two</h3>
+              <p>Description.</p>
             </div>
-        </section>
 
-
-        <!-- WHAT'S INCLUDED -->
-        <section class="light-section">
-            <div class="container">
-
-                <h2>What's Included</h2>
-
-                <div class="feature-grid">
-
-                    <div class="feature-card">
-                        <i class="fa-solid fa-check"></i>
-                        <h3>Feature One</h3>
-                        <p>Description.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <i class="fa-solid fa-check"></i>
-                        <h3>Feature Two</h3>
-                        <p>Description.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <i class="fa-solid fa-check"></i>
-                        <h3>Feature Three</h3>
-                        <p>Description.</p>
-                    </div>
-
-                </div>
-
+            <div class="feature-card">
+              <i class="fa-solid fa-check"></i>
+              <h3>Feature Three</h3>
+              <p>Description.</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- HOW IT WORKS -->
+      <section class="content-section">
+        <div class="container">
+          <h2>How It Works</h2>
 
-        <!-- HOW IT WORKS -->
-        <section class="content-section">
-            <div class="container">
+          <ol class="process-list">
+            <li>Initial discussion.</li>
+            <li>Diagnosis or assessment.</li>
+            <li>Recommendation.</li>
+            <li>Completion of the work.</li>
+          </ol>
+        </div>
+      </section>
 
-                <h2>How It Works</h2>
+      <!-- PRICING -->
+      <section class="light-section">
+        <div class="container">
+          <h2>Pricing</h2>
 
-                <ol class="process-list">
-                    <li>Initial discussion.</li>
-                    <li>Diagnosis or assessment.</li>
-                    <li>Recommendation.</li>
-                    <li>Completion of the work.</li>
-                </ol>
+          <p>Explain your pricing or link to the pricing page.</p>
+        </div>
+      </section>
 
-            </div>
-        </section>
+      <!-- FAQ -->
+      <section class="content-section">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
 
+          <div class="faq-item">
+            <h3>Question?</h3>
+            <p>Answer.</p>
+          </div>
 
-        <!-- PRICING -->
-        <section class="light-section">
-            <div class="container">
+          <div class="faq-item">
+            <h3>Question?</h3>
+            <p>Answer.</p>
+          </div>
+        </div>
+      </section>
 
-                <h2>Pricing</h2>
+      <!-- CTA -->
+      <section class="page-cta">
+        <div class="container">
+          <h2>Need Help?</h2>
 
-                <p>
-                    Explain your pricing or link to the pricing page.
-                </p>
+          <p>Get in touch today for friendly, jargon-free advice.</p>
 
-            </div>
-        </section>
-
-
-        <!-- FAQ -->
-        <section class="content-section">
-            <div class="container">
-
-                <h2>Frequently Asked Questions</h2>
-
-                <div class="faq-item">
-                    <h3>Question?</h3>
-                    <p>Answer.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Question?</h3>
-                    <p>Answer.</p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- CTA -->
-        <section class="page-cta">
-            <div class="container">
-
-                <h2>Need Help?</h2>
-
-                <p>
-                    Get in touch today for friendly, jargon-free advice.
-                </p>
-
-                <a href="/contact.html"
-                   class="btn btn-primary track-cta"
-                   data-location="service-page">
-                    Get In Touch
-                </a>
-
-            </div>
-        </section>
-
+          <a
+            href="/contact.html"
+            class="btn btn-primary track-cta"
+            data-location="service-page"
+          >
+            Get In Touch
+          </a>
+        </div>
+      </section>
     </main>
 
     <!-- INCLUDE Footer -->
     <div id="footer"></div>
 
     <script type="module" src="/js/main.js"></script>
-
-</body>
+  </body>
 </html>
