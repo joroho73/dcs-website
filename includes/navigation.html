@@ -1,14 +1,46 @@
 <!-- NAVIGATION -->
 <nav class="navbar">
-    <div class="nav-container">
-        <ul class="nav-menu">
-            <li><a href="/index.html" class="nav-link active">Home</a></li>
-            <li><a href="/computer-support.html" class="nav-link">Computer Support</a></li>
-            <li><a href="/business-technology.html" class="nav-link">Business Technology</a></li>
-            <li><a href="/ai-automation.html" class="nav-link">AI Automation</a></li>
-            <li><a href="/reviews.html" class="nav-link">Reviews</a></li>
-            <li><a href="/about.html" class="nav-link">About</a></li>
-            <li><a href="/contact.html" class="nav-link">Contact</a></li>
+  <div class="nav-container">
+    <ul class="nav-menu">
+      <li><a href="/index.html" class="nav-link active">Home</a></li>
+      <li class="has-submenu">
+        <a href="/computer-support/index.html" class="nav-link">
+          Computer Support
+        </a>
+        <button
+          class="submenu-toggle"
+          type="button"
+          aria-label="Toggle Computer Support submenu"
+          aria-expanded="false"
+          aria-controls="computer-support-submenu"
+        >
+          <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </button>
+        <ul class="submenu" id="computer-support-submenu">
+          <li>
+            <a href="/computer-services/computer-repairs.html" class="nav-link">
+              Computer Repairs
+            </a>
+          </li>
+          <li>
+            <a
+              href="/computer-services/computer-upgrades.html"
+              class="nav-link"
+            >
+              Computer Upgrades
+            </a>
+          </li>
         </ul>
-    </div>
+      </li>
+      <li>
+        <a href="/business-technology.html" class="nav-link">
+          Business Technology
+        </a>
+      </li>
+      <li><a href="/ai-automation.html" class="nav-link">AI Automation</a></li>
+      <li><a href="/reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="/about.html" class="nav-link">About</a></li>
+      <li><a href="/contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
 </nav>
