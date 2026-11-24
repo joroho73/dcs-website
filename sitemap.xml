@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -22,6 +23,66 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- Computer Support Services -->
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/computer-repairs.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/computer-upgrades.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/new-computer-setup.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/wifi-networking.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/printer-support.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/virus-scam-removal.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/data-backup-transfer.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://dunmowcomputerservices.com/computer-services/email-software-support.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Business Technology -->
+
     <url>
         <loc>https://dunmowcomputerservices.com/business-technology.html</loc>
         <lastmod>2026-07-29</lastmod>
@@ -29,12 +90,16 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- AI Automation -->
+
     <url>
         <loc>https://dunmowcomputerservices.com/ai-automation.html</loc>
         <lastmod>2026-11-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Reviews and Contact -->
 
     <url>
         <loc>https://dunmowcomputerservices.com/reviews.html</loc>
@@ -49,6 +114,8 @@
         <changefreq>yearly</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <!-- Recommended Products -->
 
     <url>
         <loc>https://dunmowcomputerservices.com/recommended-products.html</loc>
