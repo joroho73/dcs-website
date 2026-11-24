@@ -14,6 +14,7 @@
   --light-bg: #f8f9fa;
   --soft-blue-bg: #eef6ff;
   --surface-blue: rgba(37, 99, 235, 0.08);
+  --muted-blue: #d5e5f5;
   --border: #e0e0e0;
   --text-dark: #333333;
   --text-light: #666666;
@@ -684,7 +685,7 @@ a {
 }
 
 .page-header {
-  background: var(--light-bg);
+  background: var(--muted-blue);
   padding: 70px 20px;
   text-align: center;
 }
@@ -1214,6 +1215,9 @@ a {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+.page-header .cta-buttons {
+  margin-top: 25px;
 }
 
 /* ==========================================================
